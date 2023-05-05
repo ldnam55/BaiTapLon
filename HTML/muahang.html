@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../CSS/muahang.css">
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <script src="../JS/jquery-3.6.4.js"></script>
+  <script src="../JS/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+       function ktTen(){
+        var txtTen = $("#txtTen").val();
+        var btnTen = $("#btnTen");
+        ktten = /^\b(?:[A-Z][a-z]*)+(?:\s[A-Z][a-z]*)*\b$ /;
+        if(txtTen == ""){
+          btnTen.html("Bắt Buộc Nhập");
+          return false;
+        } 
+        else{
+            if(!ktten.test(txtTen)){
+              btnTen.html("Nhập sai tên");
+              return false;
+            }
+            else{
+              btnTen.html("*");
+              return true;
+            }
+        }
+       };
+       $("#txtTen").blur(ktTen);
+
+       function ktDC(){
+        var txtTen = $("#txtDC").val();
+        var btnTen = $("#btnDC");
+        ktten = /^\b(?:[A-Z][a-z]*)+(?:\s[A-Z][a-z]*)*\b$/;
+        if(txtTen == ""){
+          btnTen.html("Bắt Buộc Nhập");
+          return false;
+        } 
+        else{
+            if(!ktten.test(txtTen)){
+              btnTen.html("Nhập sai");
+              return false;
+            }
+            else{
+              btnTen.html("*");
+              return true;
+            }
+        }
+       };
+       $("#txtDC").blur(ktDC);
+       7
+       function ktSdt(){
+        var txtTen = $("#txtSdt").val();
+        var btnTen = $("#btnSdt");
+        ktten = /^(0)[0-9]{9}$ /;
+        if(txtTen == ""){
+          btnTen.html("Bắt Buộc Nhập");
+          return false;
+        } 
+        else{
+            if(ktten.test(txtTen)){
+              btnTen.html("Nhập sai");
+              return false;
+            }
+            else{
+              btnTen.html("*");
+              return true;
+            }
+        }
+       };
+       $("#txtSdt").blur(ktSdt);
+ 
+        function btn1(){
+          $("#btnDatHang").click(function(){
+            alert("Đặt Hàng Thành Công! Xin Cảm Ơn Quý Khách Đã Đặt Hàng Bên Normal Phone");
+        })};
+        $("#btnDatHang").blur(btn1);
+       
+    });
+  </script>
+</head>
+
+<body>
+  <div class="content">
+    <div class="wrapper">
+
+      <div class="dangnhap">
+        <a href="../HTML/dangki.html" id="dangnhap-link">Đăng nhập</a>
+        <a href="../HTML/dangki.html" id="dangki-link">Đăng kí</a>
+      </div>
+      <div class="Logo">
+        <a href="../HTML/index.html"><img src="../IMG_STYLE/Hải Linh.png" alt="" height="70px"></a>
+        <p class="Tieude" style="cursor: pointer;">
+          Normal <br> Phone
+        </p>
+      </div>
+      <nav class="Menu">
+        <ul class="clearfix">
+          <li class="arrow"><a href="../HTML/iphone.html">iPhone</a>
+            <ul class="sub-menu">
+              <li><a href="iphone14.html">iPhone 14</a></li>
+              <li><a href="iphone13.html">iPhone 13</a></li>
+              <li><a href="iphone12.html">iPhone 12</a></li>
+
+            </ul>
+          </li>
+          <li class="arrow1"><a href="../HTML/macbook.html">MacBook</a>
+            <ul class="sub-menu1">
+              <li><a href="macpro.html">MacBook Pro</a></li>
+
+
+              <li><a href="macair.html">Mac Air</a></li>
+
+            </ul>
+          </li>
+          <li class="arrow2"><a href="../HTML/ipad.html">iPad</a>
+            <ul class="sub-menu2">
+              <li><a href="ipadpro.html">iPad Pro </a></li>
+              <li><a href="iPadNor.html">iPad Gen</a></li>
+              <li><a href="ipadAir.html">iPad Air</a></li>
+
+            </ul>
+          </li>
+          <li class="arrow3"><a href="../HTML/pk.html">Phụ Kiện</a>
+            <ul class="sub-menu3">
+
+
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+    </div>
+    <!-- phan than  -->
+    <div class="phanthan">
+      <div class="phanthancon">
+        <h1>THÔNG TIN KHÁCH HÀNG</h1>
+        <div class="hoten">
+          <label for="hoten" style="font-size: 30px; ">Nhập Họ Và Tên Của Bạn:</label> <br>
+          <input type="text" name="" id="txtTen" placeholder="Họ và Tên" style="font-size: 20px; width: 60%;">
+          <br>
+          <span id="btnTen">*</span>
+          <br>
+          <br>
+          <label for="sdt" style="font-size: 30px; ">Nhập Số Điện Thoại Của Bạn:</label> <br>
+          <input type="text" name="" id="txtSdt" placeholder="Số điện thoại" style="font-size: 20px; width: 60%;">
+          <br>
+          <span id="btnSdt">*</span>
+        </div>
+        <div class="diachi">
+          <label for="diachi" style="font-size: 30px; ">Nhập địa chỉ của bạn</label> <br>
+          <input type="text" name="" id="txtDC" placeholder="Thôn(ấp) - Xã(Phường) - Huyện(Quận) - Tỉnh(Thành Phố)" style="font-size: 20px; width: 60%;">
+          <br>
+          <span id="btnDC">*</span>
+        </div>
+        <div>
+          <input type="text" name="" id="" placeholder="Nhập ghi chú (nếu có)" style="font-size: 40px; width: 60%; height: 60px;"> <br> <br>
+          <input type="checkbox" name="goichokhach" id="goichokhach" >
+          <label for="goichokhach" style="font-size: 30px; ">Gọi cho người khách nhận hàng</label> <br> <br>
+          <input type="checkbox" name="" id="xuathoadon"> <label for="xuathoadon" style="font-size: 30px; ">Xuất hóa đơn công ty</label>
+        </div>
+        <div class="nutdathang"><a href="../HTML/index.html"> <button class="btn"  id="btnDatHang"> ĐẶT HÀNG </button></a></div>
+      </div>
+    </div>
+</body>
+
+</html>

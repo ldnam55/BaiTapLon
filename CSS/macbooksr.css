@@ -1,0 +1,266 @@
+*{
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 0px;
+}
+html, body {
+    max-width: 1600px;
+    min-width: 1500px;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.title > p{
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title  a:hover{
+  color: purple;
+}
+.title > a{
+    font-size: 22px;
+    float: right;
+    margin-right: 10px;
+    color: white;
+    text-shadow: 0px 1px silver;
+    position:relative;
+    top: 30px;
+ 
+}
+.clearfix::after{
+    display: block;
+    clear: both;
+}
+
+
+.wrapper{
+  
+    box-shadow: 0px 1px 3px silver;
+    background-image:url(../IMG_STYLE/ngam-nhin-hinh-nen-thiet-ke-cuc-ki-chuyen-nghiep-mau-cam-vang-300x163.jpg);
+    position: relative;
+    height: 90px;
+}
+.Tieude{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 110px;
+}
+/* LOGO*/
+.Logo a {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.dangnhap {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+  }
+  
+  .dangnhap > a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .dangnhap > a:hover {
+    color: black;
+  }
+/* phần menu */
+ .arrow{
+    margin-left: 90px;
+} 
+.Menu{
+    border: 1px solid white;
+    box-shadow: 0 1px 1px silver;
+    width: 1000px;
+    margin: 3px auto;
+    background: orange;
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    left: 300px;
+    z-index: 99;
+    
+}
+
+.Menu > ul.clearfix > li {
+    float: left;
+    list-style-type: none;
+    padding: 10px 15px;
+     
+    
+}
+.clearfix > li > ul > li > a{
+    text-decoration: none;
+}
+.Menu > ul.clearfix > li > a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.Menu > ul.clearfix > li.arrow > ul.sub-menu,li.arrow1> ul.sub-menu1 {
+    display: none;
+}
+
+li.arrow:hover > ul.sub-menu{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 80px;
+    width: 200px;
+    z-index: 99;
+}
+li.arrow1:hover > ul.sub-menu1 {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 300px;
+    width: 200px;
+    z-index: 99;
+}
+.Menu > ul.clearfix > li.arrow1:hover > ul.sub-menu1 > li {
+    list-style-type: none;
+    background-color: goldenrod;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 3px;
+    margin: 0 auto;
+}
+li.arrow2:hover > ul.sub-menu2 {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 480px;
+    width: 200px;
+    z-index: 99;
+}
+.Menu > ul.clearfix > li.arrow2:hover > ul.sub-menu2 > li {
+    list-style-type: none;
+    background-color: goldenrod;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 3px;
+    margin: 0 auto;
+}
+li.arrow3:hover > ul.sub-menu3 {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 650px;
+    width: 200px;
+    z-index: 99;
+}
+.Menu > ul.clearfix > li.arrow3:hover > ul.sub-menu3 > li {
+    list-style-type: none;
+    background-color: goldenrod;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 3px;
+    margin: 0 auto;
+}
+.Menu > ul.clearfix > li.arrow:hover > ul.sub-menu {
+    display: block;
+}
+
+.Menu > ul.clearfix > li.arrow:hover > ul.sub-menu > li {
+    list-style-type: none;
+    background-color: goldenrod;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.clearfix li :hover{
+    background-color: gold;
+    font-size: 25px ;
+    padding: 3px;
+}
+.sub-menu > li > a{
+    list-style-type: none;
+    padding-left:20px ;
+    position: relative;
+    left: 20px;
+    color: aliceblue;
+}
+.sub-menu1 > li > a{
+    list-style-type: none;
+    padding-left:20px ;
+    position: relative;
+    left: 20px;
+    color: aliceblue;
+}
+.sub-menu2 > li > a{
+    padding-left:20px ;
+    position: relative;
+    left: 20px;
+    color: aliceblue;
+}
+.sub-menu3 > li > a{
+    padding-left:15px ;
+    position: relative;
+    left: 20px;
+    color: aliceblue;
+}
+
+.arrow{
+    background-color: gold;
+}
+
+.Menu ul li ul {
+    display: none;
+}
+
+/* phan than */
+
+.modau{
+    background-color: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+}
+.iphone_body{
+    margin-top: 5px;
+    background-color: orange;
+}
+.iphone_body > div  {
+   display: flex;
+   margin-top: 60px;
+   justify-content: space-around;
+   border-top: 2px solid white ;
+   padding-bottom: 100px;
+
+}
+
+.iphone_body > div > div > a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    margin-top: 80px;
+    background-color: gold;
+    border-radius: 20px;
+    padding: 10px;
+}
+.iphone_body > div > div > a:hover{
+    background-color: goldenrod;
+    box-shadow: 4px 4px 4px silver;
+    color:white;
+    
+}
